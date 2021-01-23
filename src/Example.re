@@ -16,7 +16,7 @@ module FormData: FormData = {
   type validated;
   type unvalidated;
   let formData = a => a;
-  let upperCase = a => String.uppercase(a);
+  let upperCase = a => String.uppercase_ascii(a);
   let validate = a =>
     if (String.length(a) > 3) {
       Some(a);

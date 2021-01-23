@@ -13,6 +13,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^8.0.3"
+    "bs-platform": "^8.4.2"
   }
 }

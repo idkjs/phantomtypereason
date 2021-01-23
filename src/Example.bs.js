@@ -16,7 +16,19 @@ function validate(a) {
   
 }
 
-exports.formData = formData;
-exports.upperCase = upperCase;
-exports.validate = validate;
-/* No side effect */
+var $$FormData = {
+  formData: formData,
+  upperCase: upperCase,
+  validate: validate
+};
+
+var a = "foobar";
+
+var b = validate(a);
+
+console.log(a);
+
+exports.$$FormData = $$FormData;
+exports.a = a;
+exports.b = b;
+/* b Not a pure module */

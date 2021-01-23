@@ -60,7 +60,7 @@ type formData('a) = string;
   type validated;
   type unvalidated;
   let formData = a => a;
-  let upperCase = a => String.uppercase(a);
+  let upperCase = a => String.uppercase_ascii(a);
   let validate = a =>
     if (String.length(a) > 3) {
       Some(a);
@@ -180,7 +180,7 @@ module FormData: FormData = {
   type t('a) = string;
   let validate = a => a;
   let create = a => a;
-  let upperCase = a => String.uppercase(a);
+  let upperCase = a => String.uppercase_ascii(a);
   let toString = a => a;
 };
 ```
